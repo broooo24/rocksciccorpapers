@@ -10,19 +10,27 @@ public class Main {
         System.out.print("Second player: ");
         String str2 = scanner.nextLine();
 
+        String winnerName = nameOfTheWinner(str1,str2);
+        System.out.println(winnerName);
+
+    }
+
+    public static String  nameOfTheWinner(String str1,String str2){
         //write in lowercase
         String user1 = str1.toLowerCase();
         String user2 = str2.toLowerCase();
 
         if(user1.equals("paper")&&user2.equals("rock")||user1.equals("rock")&&user2.equals("sciccors")||user1.equals("sciccors")&&user2.equals("paper"))
-        System.out.println("1st win");
+            return "1st win";
 
         if(user2.equals("paper")&&user1.equals("rock")||user2.equals("rock")&&user1.equals("sciccors")|| user2.equals("sciccors")&&user1.equals("paper"))
-        System.out.println("2nd win");
+            return "2nd win";
 
         if (user1.equals(user2))
-            System.out.println("Draw");
+            return "Draw";
 
         //String s1 = "a" String s2= "a"
+
+        return "";
     }
 }
