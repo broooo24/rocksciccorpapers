@@ -16,7 +16,6 @@ public class Main {
     }
 
     public static String  nameOfTheWinner(String str1,String str2){
-        //write in lowercase
         String user1 = str1.toLowerCase();
         String user2 = str2.toLowerCase();
 
