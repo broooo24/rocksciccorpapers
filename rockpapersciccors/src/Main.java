@@ -29,8 +29,6 @@ public class Main {
         if (user1.equals(user2))
             return "Draw";
 
-        //String s1 = "a" String s2= "a"
-
         return "";
     }
 }
